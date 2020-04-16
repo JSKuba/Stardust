@@ -1,0 +1,36 @@
+body {
+    background-color: #F1F1F1;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper::before {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    content: "";
+    border-bottom: transparent 50vw solid;
+    border-left: transparent calc(50vw - 9px) solid;
+    border-right: transparent calc(50vw - 9px) solid;
+    border-top: #F8A748 calc(50vw - 60px) solid;
+    z-index: -2;
+}
+
+.wrapper::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border-top: transparent 50vw solid;
+    border-left: transparent calc(50vw - 9px) solid;
+    border-right: transparent calc(50vw - 9px) solid;
+    border-bottom: rgb(252, 212, 161) 50vw solid;
+    z-index: -1;
+    transform: translateY(-50vw)
+}

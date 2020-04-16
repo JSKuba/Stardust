@@ -1,0 +1,149 @@
+@mixin nav-btn-line {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #F8A748;
+    left: 0;
+    transition: ease-out .3s .3s;
+}
+
+.main-header {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    z-index: 3;
+}
+
+.logo {
+    margin: 0 auto;
+    height: 100%;
+    transform: translateX(-30px);
+    transition: ease-out .3s;
+}
+
+.navbar {
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    background: linear-gradient(#F8A748, white) ;
+    height: 100vh;
+    padding-top: 30px;
+    transform: translateX(-150px);
+    transition: ease-out .3s;
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        .navbar-list-item {
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.nav-btn-container {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-btn-line {
+    @include nav-btn-line;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-btn-line::before {
+    @include nav-btn-line;
+    top: -12px;
+}
+
+.nav-btn-line::after {
+    @include nav-btn-line;
+    top: 12px;
+}
+
+.nav-btn {
+    background: transparent;
+    padding: 10px;
+    height: 100%;
+    width: 60px;
+    transition: ease-out .3s;
+    border: 0;
+}   
+
+.nav-btn-active {
+    transform: translateX(150px);
+    .nav-btn-line {
+        background-color: transparent;
+    }
+    .nav-btn-line::before {
+        transform: translateY(12px) rotate(45deg);
+    }
+    .nav-btn-line::after {
+        transform: translateY(-12px) rotate(-45deg);
+    }
+}
+
+.navbar-active {
+    transform: translateX(0px);
+}
+
+
+@media (max-width: 580px) {
+    .logo-active {
+        transform: translateX(50px);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .main-header {
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .navbar {
+        transform: initial;
+        width: 50%;
+        height: 100%;
+        background: none;
+        position: static;
+        padding: 0;
+        display: flex;
+        .navbar-list {
+            width: 100%;
+            align-self: center;
+            flex-direction: row;
+            justify-content: space-between;
+            .navbar-list-item {
+                border: none;
+                margin: initial;
+                padding: initial;
+                a {
+                    color: #B1AFAF;
+                }
+            }
+        }
+    }
+
+    .logo {
+        transform: initial;
+        margin: initial;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}

@@ -1,0 +1,30 @@
+.main {
+    margin-top: 22vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 50vw;
+    left: 0;
+    height: 2000px;
+    width: 100%;
+    background: linear-gradient(to bottom,rgb(252, 212, 161), rgb(252, 125, 21))
+}
+
+
+
+.sheet {
+    margin: 0 auto;
+    width: 65%;
+    max-width: 1080px;
+    margin-top: 19vw;
+    background-color: #F5F1ED;
+    height: 2000px;
+    border: 1px solid #ddd;
+    box-shadow: 8px 8px 4px #707070;
+    border-radius: 20px;
+    z-index: 2;
+}
