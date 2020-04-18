@@ -1,21 +1,12 @@
 .main-logo {
-    width: 28vw;
-    margin: 0 auto;
-    box-shadow: 0 20px linear-gradient(red, blue)    
+    position: absolute;
+    width: 40vw;
+    margin-top: 29vw;
 }
 
-.main-logo::after {
-    content: "asd";
-    height: 100px;
-    height: 10px;
-    top: 0;
-    left: 0;
-    background: red;
-    z-index: 99;
-}
-
-@keyframes HifiSuperstar {
-    0% {
-        box-shadow: inset 20px 20px blue;
+@media (min-width: 1080px) {
+    .main-logo {
+        margin-top: 50vh;
+        transform: translateY(-50%);  
     }
 }

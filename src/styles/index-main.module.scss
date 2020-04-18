@@ -1,3 +1,15 @@
+//#F8A748 rgb(252, 212, 161)
+
+
+@mixin triangle {
+    top: 60px;
+    position: absolute;
+    left: 0;
+    content: "";
+    height: calc(60vw - 60px);
+    width: 100%;
+}
+
 body {
     background-color: #F1F1F1;
 }
@@ -11,26 +23,23 @@ body {
 }
 
 .wrapper::before {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    content: "";
-    border-bottom: transparent 50vw solid;
-    border-left: transparent calc(50vw - 9px) solid;
-    border-right: transparent calc(50vw - 9px) solid;
-    border-top: #F8A748 calc(50vw - 60px) solid;
+    @include triangle;
     z-index: -2;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background:#F8A748;
 }
 
 .wrapper::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    border-top: transparent 50vw solid;
-    border-left: transparent calc(50vw - 9px) solid;
-    border-right: transparent calc(50vw - 9px) solid;
-    border-bottom: rgb(252, 212, 161) 50vw solid;
+    @include triangle;
     z-index: -1;
-    transform: translateY(-50vw)
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background: rgb(252, 212, 161);
+
+}
+
+@media (min-width: 1080px) {
+
+    .wrapper::before, .wrapper::after {
+        height: calc(100% - 60px);
+    }
 }
