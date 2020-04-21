@@ -40,18 +40,6 @@ const Navbar = () => {
                                 </li>
                             )
                         })}
-                        {/* <li className={navbarStyles.navbarListItem}>
-                            <Link to="/">About</Link>
-                        </li>
-                        <li className={navbarStyles.navbarListItem}>
-                            <Link to="/">Team</Link>
-                        </li>
-                        <li className={navbarStyles.navbarListItem}>
-                            <Link to="/">Blog</Link>
-                        </li>
-                        <li className={navbarStyles.navbarListItem}>
-                            <Link to="/">Partners</Link>
-                        </li> */}
                     </ul>
                 </nav>
             </div>

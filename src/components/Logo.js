@@ -5,9 +5,9 @@ import logoStyles from './Logo.module.scss'
 
 const Logo = () => {
     return (
-        <>
+        <figure>
             <img className={logoStyles.mainLogo} src={logo} alt="logo" desc="Stardust logo" />
-        </>
+        </figure>
     )
 }
 

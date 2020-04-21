@@ -1,4 +1,4 @@
-#about-us {
+#AboutUs {
     .side-by-side {
         p {
             display: flex;
@@ -9,31 +9,22 @@
     }
 }
 
-#team {
-    .side-by-side {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .card {
-            overflow: hidden;
-            display: flex;
-            width: 20%;
-            margin: 2%;
-            min-width: 200px;
-            p {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                span {
-                    height: 100%;
-                    width: 100%;
-                    border: 3px solid #F8A748;
-                    border-radius: 20px;
-                    overflow: hidden;
-                    margin-bottom: 10px;
-                }
-            }
+#Team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    p:nth-of-type(2n) {
+        display: none;
+    }
+    h3 {
+        width: 100%;
+    }
+    p {
+        width: 20%;
+        margin: 0 2%;
+        &:hover {
+            border: 2px solid red;
         }
     }
 }
