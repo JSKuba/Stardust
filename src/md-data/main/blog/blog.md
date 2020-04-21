@@ -4,9 +4,9 @@ class: 'article'
 title: 'blog'
 ---
 
-### Blog 
+## Blog 
 
-#### Working during quarantine
+### Working during quarantine
 
 Spring 2020
 
@@ -15,7 +15,7 @@ In April there was also a very important moment for us - we had the opportunity 
 
 ![Stardust logo](./img/11.png)
 
-#### We are going to Kiruna
+### We are going to Kiruna
 
 February 2020
 
@@ -23,7 +23,7 @@ During the Student Training Week we had an occasion to get to know the cosmodrom
 
 ![Stardust logo](./img/10.jpg)
 
-#### Making our first SED
+### Making our first SED
 
 January 2020
 
@@ -31,7 +31,7 @@ Student Design Review was the biggest documentation, that we have ever made. Our
 
 ![Stardust logo](./img/9.jpg)
 
-#### We passed!
+### We passed!
 
 December 2019
 
@@ -39,7 +39,7 @@ After Selection Workshop we were patiently waiting for results and then, at 9th 
 
 ![Stardust logo](./img/8.jpg)
 
-#### Stardust at Selection Workshop in ESTEC, Noordwijk
+### Stardust at Selection Workshop in ESTEC, Noordwijk
 
 November 2019
 
@@ -47,7 +47,7 @@ In the last week of November we came to Noorwdijk to finally had pleasure to mee
 
 ![Stardust logo](./img/7.jpg)
 
-#### We are in REXUS/BEXUS Program! 
+### We are in REXUS/BEXUS Program! 
 
 Autumn 2019
 
@@ -56,7 +56,7 @@ We got an opportunity to share our idea to space industry specialists.
 
 ![Stardust logo](./img/6.jpg)
 
-#### The Best of the Best 4.0 program!
+### The Best of the Best 4.0 program!
 
 Summer 2019
 
@@ -64,7 +64,7 @@ After weeks of preparations the relevant documents, we finally got an results! T
 
 ![Stardust logo](./img/5.jpg)
 
-#### Construction of the vacuum chamber
+### Construction of the vacuum chamber
 
 Autumn 2018
 
@@ -72,7 +72,7 @@ Stardust is not just balloon missions! In 2017, we began building a vacuum chamb
 
 ![Stardust logo](./img/4.jpg)
 
-#### First microbiological mission
+### First microbiological mission
 
 September 2017
 
@@ -80,7 +80,7 @@ In September 2017 we launched our first microbiological mission from Toruń, Pol
 
 ![Stardust logo](./img/3.jpg)
 
-#### First mission
+### First mission
 
 April 2016
 
@@ -88,7 +88,7 @@ April the 26th, 2016. Almost exactly four years ago, we had our first balloon mi
 
 ![Stardust logo](./img/2.jpg)
 
-#### The very beginning 
+### The very beginning 
 
 Spring 2015
 

@@ -4,7 +4,7 @@ class: 'article'
 title: 'team'
 ---
 
-### Team
+## Team
 
 ![Agnieszka Kurdyn](./1.jpg)
 Agnieszka<br />Kurdyn

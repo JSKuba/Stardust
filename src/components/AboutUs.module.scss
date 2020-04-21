@@ -1,10 +1,8 @@
 @media(min-width: 768px) {
     .aboutUs {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         h3 {
             width: 100%;
+            mix-blend-mode: difference;
         }
         p {
             width: 100%;
@@ -14,8 +12,11 @@
             flex-direction: row;
             flex-wrap: wrap;
             span {
-                width: 50%;
+                width: 45%;
             }
+        }
+        p:nth-of-type(1) {
+            margin-bottom: 60px;
         }
     }
 }

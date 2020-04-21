@@ -4,7 +4,7 @@ class: 'article'
 title: 'support'
 ---
 
-### Support 
+## Support 
 
 ![Stardust logo](./img/1.png)
 ![Stardust logo](./img/2.png)

@@ -7,7 +7,7 @@ const Blog = (props) => {
     useEffect(() => {
       const blogNodes = [...document.getElementById('blog').children]
       blogNodes.map((v, i, a) => {
-          if(v.tagName === 'H4') {
+          if(v.tagName === 'H3') {
             const article = document.createElement('article')
             const aside = document.createElement('aside')
             const spanWrapper = document.createElement('div')

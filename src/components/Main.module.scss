@@ -5,6 +5,11 @@
     justify-content: center;
 }
 
+.background {
+    // background-image: url(./triangle.svg);
+    // background-repeat: no-repeat;
+}
+
 .sheet {
     position: relative;
     align-self: stretch;
@@ -18,16 +23,28 @@
 section {
     display: flex;
     flex-direction: column;
-    h3 {
+    h2 {
+        width: 100%;
         color: #707070;
         text-align: center;
         margin-bottom: 100px;
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 25%;
+            height: 8px;
+            background: linear-gradient(to right, rgb(255, 145, 0), #fcd4a1);
+            margin-left: 10px;
+        }
+    }
+    h3 {
+        color: #808080;
     }
     p {
         text-align: center;
         margin: 0;
     }
-    margin-bottom: 150px;
+    margin-top: 150px;
 }
 
 @media (min-width: 621px) {

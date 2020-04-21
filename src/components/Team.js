@@ -29,6 +29,11 @@ const Team = (props) => {
                 }
             })
         })
+        const container = document.createElement('div')
+        team.map(v => {
+            return container.appendChild(v)
+        })
+        document.getElementById('team').appendChild(container)
     })
 
     return (
