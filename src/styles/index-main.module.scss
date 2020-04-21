@@ -10,15 +10,6 @@
     width: 100%;
 }
 
-body {
-    background-color: #F1F1F1;
-}
-
-.wrapper {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
 
 .wrapper::before {
     @include triangle;

@@ -1,65 +1,75 @@
-h3 {
-    width: 100%;
-}
-
 .blog {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-around;
+    flex-direction: column;
+    h3 {
+        width: 100%;
+    }
+    article {
+        background: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        h4 {
+            text-align: center;
+            width: 100%;
+            margin-top: -40px;
+        }
+        p {
+            width: 100%;
+            font-size: 15px;
+        }
+        p:nth-of-type(2) {
+            order: -1;
+            width: 87%;
+            transform: translateY(-60px)
+        }
+    }
 }
 
-.article {
-    background: white;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 80px;
-    padding: 20px;
-    flex-wrap: wrap;
-    h4 {
-        text-align: center;
-        width: 100%;
-        margin-top: -40px;
-    }
-    p {
-        width: 100%;
-        font-size: 15px;
-    }
-    p:nth-of-type(2) {
-        order: -1;
-        width: 87%;
-        transform: translateY(-60px)
-    }
-}
 
 
 
 @media (min-width: 768px) {
-    .article {
-        width: 45%;
+    .blog {
+        button {
+            width: 20%;
+            background: none;
+            border: 2px solid orange;
+            color: gray;
+            margin: 0 auto;
+        }
     }
 
-    .aside-container {
+    .container {
         display: flex;
-        justify-content: center;
-        width: 45%;
-        align-self: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        article {
+            width: 50%;
+            padding: 20px;
+        }
         aside {
-            box-sizing: content-box;
-            width: fit-content;
-            border: 2px solid orange;
-            p {
-                transform: translate3d(-20px, 15px, 0);
-                font-size: 30px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div {
+                width: fit-content;
+                border: 2px solid orange;
+                p {
+                    transform: translate3d(-20px, 15px, 0);
+                    font-size: 30px;
+                }
             }
         }
     }
 
-    .aside-container-visible {
-        aside {
-            background: orange;
-        }
+    .disabled {
+        display: none !important;
+    }
+
+    .visible {
+        background: orange;
     }
 }

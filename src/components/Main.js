@@ -40,12 +40,13 @@ const Main = () => {
     return (
         <main className={mainStyles.main}>
             <Logo />
-            <div className={mainStyles.background}>
+            <div id="main" className={mainStyles.background}>
                 <div className={mainStyles.sheet}>
                     {articles.allMarkdownRemark.edges.sort((a, b) => {return a.node.frontmatter.index - b.node.frontmatter.index}).map(v => {
                         const Comp = Components[v.node.frontmatter.title]
                         return (
                             <Comp
+                                key={v.node.frontmatter.index}
                                 html={v.node.html} 
                                 title={v.node.frontmatter.title}
                             />

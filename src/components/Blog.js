@@ -1,54 +1,60 @@
 import React, { useEffect } from 'react'
-import { useStaticQuery } from 'gatsby'
 
 import blogStyles from './Blog.module.scss'
 
 const Blog = (props) => {
-    const data = useStaticQuery(graphql`
-    query {
-        allMarkdownRemark(filter: { frontmatter: { title: { eq: "blog" } } } ) {
-          edges {
-            node {
-                frontmatter {
-                title
-              }
-              html
-            }
-          }
-        }
-      }
-    `)
 
     useEffect(() => {
       const blogNodes = [...document.getElementById('blog').children]
       blogNodes.map((v, i, a) => {
-        if(v.tagName == 'H4') {
-          const article = document.createElement('article')
-          const aside = document.createElement('aside')
-          const asideContainer = document.createElement('div')
-          asideContainer.className = blogStyles.asideContainer
-          article.className = blogStyles.article
-          article.appendChild(v)
-          aside.appendChild(a[i+1])
-          article.appendChild(a[i+2])
-          article.appendChild(a[i+3])
-          asideContainer.appendChild(aside)
-          if(((i + 7) % 8) == 0) { 
-            document.getElementById('blog').appendChild(asideContainer)
-            document.getElementById('blog').appendChild(article)
+          if(v.tagName === 'H4') {
+            const article = document.createElement('article')
+            const aside = document.createElement('aside')
+            const spanWrapper = document.createElement('div')
+            const container = document.createElement('div')
+            article.appendChild(v)
+            spanWrapper.appendChild(a[i+1])
+            article.appendChild(a[i+2])
+            article.appendChild(a[i+3])
+            aside.appendChild(spanWrapper)
+            spanWrapper.className = "span-wrapper"
+            if (i >= 3 * 4) {
+              container.classList.add(blogStyles.disabled)
+            }
+            if(((i + 7) % 8) === 0) { 
+              container.appendChild(aside)
+              container.appendChild(article)
+            } else {
+              container.appendChild(article)
+              container.appendChild(aside)
+            }
+            container.classList.add(blogStyles.container)
+            return document.getElementById('blog').appendChild(container)
           } else {
-            document.getElementById('blog').appendChild(article)
-            document.getElementById('blog').appendChild(asideContainer)
-            
+            return v
           }
-        }
       })
-      let asideContainers = [...document.getElementsByClassName(`${blogStyles.asideContainer}`)]
+
+
+      const showAllBtn = document.createElement('button')
+      showAllBtn.innerHTML = 'Show all'
+      document.getElementById('blog').appendChild(showAllBtn)
+      showAllBtn.addEventListener('click', () => {
+        const containerList = [...document.getElementById('blog').getElementsByClassName(blogStyles.container)]
+        console.log(containerList)
+        containerList.map(v => {
+          v.classList.remove(blogStyles.disabled)
+        })
+      })
+
+
+      let asides = [...document.getElementById('blog').getElementsByClassName('span-wrapper')]
       window.addEventListener('scroll', () => {
-        asideContainers.map((v, i) => {
-          if(window.pageYOffset > v.offsetTop + 300) {
-            v.className = `${blogStyles.asideContainer} ${blogStyles.asideContainerVisible}`
+        asides.map(v => {
+          if(window.pageYOffset > v.offsetTop + window.innerHeight/2 - (window.innerHeight - document.getElementById('main').offsetTop)) {
+            return !v.parentElement.parentElement.classList.contains(blogStyles.disabled) && v.classList.add(blogStyles.visible)
           }
+          return v
         })
       })
     })

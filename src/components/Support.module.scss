@@ -1,0 +1,14 @@
+.section {
+    p {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        span {
+            flex-basis: 33%;
+            align-self: center;
+        }
+        span:last-of-type {
+            flex-basis: 100%;
+        }
+    }
+}
