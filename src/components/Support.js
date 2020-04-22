@@ -1,6 +1,6 @@
 import React from 'react'
 
-import supportStyles from './Support.module.scss'
+import supportStyles from './styles/Support.module.scss'
 
 const Support = (props) => {
     return (

@@ -6,7 +6,7 @@ import Team from './Team'
 import Blog from './Blog'
 import Support from './Support'
 import Logo from './Logo'
-import mainStyles from './Main.module.scss'
+import mainStyles from './styles/Main.module.scss'
 
 const Main = () => {
     const articles = useStaticQuery(graphql`

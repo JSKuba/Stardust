@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import blogStyles from './Blog.module.scss'
+import blogStyles from './styles/Blog.module.scss'
 
 const Blog = (props) => {
 
@@ -43,7 +43,7 @@ const Blog = (props) => {
         const containerList = [...document.getElementById('blog').getElementsByClassName(blogStyles.container)]
         console.log(containerList)
         containerList.map(v => {
-          v.classList.remove(blogStyles.disabled)
+          return v.classList.remove(blogStyles.disabled)
         })
       })
 

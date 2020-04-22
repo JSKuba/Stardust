@@ -38,27 +38,31 @@
     padding-top: 30px;
     transform: translateX(-150px);
     transition: ease-out .3s;
-    .navbar-list {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        margin: 0;
-        .navbar-list-item {
-            margin: 20px auto;
-            border: 2px solid white;
-            border-radius: 10px;
-            width: 100px;
-            text-align: center;
-            a {
-                text-decoration: none;
-                color: white;
-                display: block;
-                width: 100%;
-                height: 100%;
-                line-height: 45px;
-            }
-        }
-    }
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    
+}
+
+.navbar-list-item {
+    margin: 20px auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
 }
 
 .nav-btn-container {
@@ -136,17 +140,37 @@
         margin: initial;
         display: flex;
         justify-content: initial;
-        .navbar-list {
-            align-self: center;
-            flex-direction: row;
-            margin-left: auto;
-            .navbar-list-item {
-                white-space: nowrap;
-                border: none;
-                a {
-                    color: #B1AFAF;
-                    line-height: 60px;
-                }
+    }
+
+    .navbar-list {
+        align-self: center;
+        flex-direction: row;
+        margin-left: auto;
+        
+    }
+
+    .navbar-list-item {
+        white-space: nowrap;
+        border: none;
+        color: #B1AFAF;
+        a {
+            color: inherit;
+            line-height: 60px;
+        }
+    }
+    
+    .focused {
+        color: rgb(110, 110, 110) !important;
+        a {
+            &::after {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                content: "";
+                background: orange;
+                width: 10px;
+                height: 10px;
+                margin-left: 5px;
             }
         }
     }
@@ -159,4 +183,5 @@
     .nav-btn {
         display: none;
     }
+
 }

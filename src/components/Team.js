@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import teamStyles from './Team.module.scss'
+import teamStyles from './styles/Team.module.scss'
 
 const Team = (props) => {
 

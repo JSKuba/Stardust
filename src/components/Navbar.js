@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import logo from './img/stardust-logo.png'
-import navbarStyles from './Navbar.module.scss'
+import navbarStyles from './styles/Navbar.module.scss'
 
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false)
@@ -21,6 +21,21 @@ const Navbar = () => {
             }
         }
     `)
+
+    useEffect(() => {
+        const sections = [...document.getElementsByTagName('section')]
+        const navItems = [...document.getElementsByClassName(navbarStyles.navbarListItem)]
+        window.addEventListener('scroll', () => {
+            sections.map((v, i) => {
+                if((window.pageYOffset - window.innerHeight/2 > v.offsetTop) & (window.pageYOffset - window.innerHeight/2 < v.getBoundingClientRect().height + v.offsetTop)) {
+                    console.log('in')
+                    return navItems[i].classList.add(navbarStyles.focused)
+                } else {
+                    return navItems[i].classList.remove(navbarStyles.focused)
+                }
+            })
+        })
+    })
 
     return (
         <header className={navbarStyles.mainHeader}>

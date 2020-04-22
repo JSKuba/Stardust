@@ -1,13 +1,18 @@
 figure {
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: calc(60vw - 60px);
     margin-top: 60px;
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
+    position: relative;
     .main-logo {
         width: 40vw;
+    }
+    .arrow {
+        display: none;
     }
 }
 
@@ -22,6 +27,16 @@ figure {
         align-items: center;
         .main-logo {
             width: 40vw;
+        }
+        .arrow {
+            display: initial;
+            position: absolute;
+            bottom: 0;
+            width: 10vw;
+            transition: 2s ease-in-out;
+        }
+        .hide {
+            opacity: 0;
         }
     }
 }

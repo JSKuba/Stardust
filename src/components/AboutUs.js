@@ -1,6 +1,6 @@
 import React from 'react'
 
-import aboutUsStyles from './AboutUs.module.scss'
+import aboutUsStyles from './styles/AboutUs.module.scss'
 
 const AboutUs = (props) => {
     return (

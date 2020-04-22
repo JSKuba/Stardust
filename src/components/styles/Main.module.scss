@@ -5,11 +5,6 @@
     justify-content: center;
 }
 
-.background {
-    // background-image: url(./triangle.svg);
-    // background-repeat: no-repeat;
-}
-
 .sheet {
     position: relative;
     align-self: stretch;
@@ -44,7 +39,8 @@ section {
         text-align: center;
         margin: 0;
     }
-    margin-top: 150px;
+    margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 @media (min-width: 621px) {
