@@ -25,21 +25,31 @@ const Navbar = () => {
     useEffect(() => {
         const sections = [...document.getElementsByTagName('section')]
         const navItems = [...document.getElementsByClassName(navbarStyles.navbarListItem)]
-        window.addEventListener('scroll', () => {
-            sections.map((v, i) => {
-                if((window.pageYOffset - document.getElementById('sheet').offsetTop/2 > v.offsetTop) & (window.pageYOffset - document.getElementById('sheet').offsetTop/2 < v.getBoundingClientRect().height + v.offsetTop)) {
-                    return navItems[i].classList.add(navbarStyles.focused)
-                } else {
-                    return navItems[i].classList.remove(navbarStyles.focused)
-                }
+        if (sections.length <= 1) {
+            navItems[2].classList.add(navbarStyles.focused)
+            navItems.map(v => {
+                v.addEventListener('click', () => {
+                    window.location.href = "../";
+                })
+                return v
             })
-        })
-        navItems.map(v => {
-            v.addEventListener('click', () => {
-                window.scrollTo(0, document.getElementById(v.textContent.toLowerCase()).offsetTop + document.getElementById('sheet').offsetTop - 60)
+        } else {
+            window.addEventListener('scroll', () => {
+                sections.map((v, i) => {
+                    if((window.pageYOffset - document.getElementById('sheet').offsetTop/2 > v.offsetTop) & (window.pageYOffset - document.getElementById('sheet').offsetTop/2 < v.getBoundingClientRect().height + v.offsetTop)) {
+                        return navItems[i].classList.add(navbarStyles.focused)
+                    } else {
+                        return navItems[i].classList.remove(navbarStyles.focused)
+                    }
+                })
             })
-            return v
-        })
+            navItems.map(v => {
+                v.addEventListener('click', () => {
+                    window.scrollTo(0, document.getElementById(v.textContent.toLowerCase()).offsetTop + document.getElementById('sheet').offsetTop - 60)
+                })
+                return v
+            })
+        }
     })
 
     return (
