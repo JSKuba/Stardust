@@ -1,5 +1,4 @@
 figure {
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: calc(60vw - 60px);
@@ -8,6 +7,7 @@ figure {
     align-items: center;
     margin-bottom: 0;
     position: relative;
+    display: none;
     .main-logo {
         width: 40vw;
     }
@@ -16,15 +16,31 @@ figure {
     }
 }
 
-
-@media (min-width: 1080px) {
+@media (min-width: 768px) {
     figure {
+        margin: 0 auto;
+        margin-top: 60px;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40vw;
+        .main-logo {
+            width: 60vw;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    figure {
+        position: relative;
         display: flex;
         width: 100%;
         height: 100vh;
         margin-top: 0;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0;
         .main-logo {
             width: 40vw;
         }
@@ -32,7 +48,7 @@ figure {
             display: initial;
             position: absolute;
             bottom: 0;
-            width: 10vw;
+            width: 5vw;
             transition: 2s ease-in-out;
         }
         .hide {

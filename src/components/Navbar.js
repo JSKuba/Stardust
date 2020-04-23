@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 import logo from './img/stardust-logo.png'
 import navbarStyles from './styles/Navbar.module.scss'
@@ -27,13 +27,18 @@ const Navbar = () => {
         const navItems = [...document.getElementsByClassName(navbarStyles.navbarListItem)]
         window.addEventListener('scroll', () => {
             sections.map((v, i) => {
-                if((window.pageYOffset - window.innerHeight/2 > v.offsetTop) & (window.pageYOffset - window.innerHeight/2 < v.getBoundingClientRect().height + v.offsetTop)) {
-                    console.log('in')
+                if((window.pageYOffset - document.getElementById('sheet').offsetTop/2 > v.offsetTop) & (window.pageYOffset - document.getElementById('sheet').offsetTop/2 < v.getBoundingClientRect().height + v.offsetTop)) {
                     return navItems[i].classList.add(navbarStyles.focused)
                 } else {
                     return navItems[i].classList.remove(navbarStyles.focused)
                 }
             })
+        })
+        navItems.map(v => {
+            v.addEventListener('click', () => {
+                window.scrollTo(0, document.getElementById(v.textContent.toLowerCase()).offsetTop + document.getElementById('sheet').offsetTop - 60)
+            })
+            return v
         })
     })
 
@@ -51,7 +56,7 @@ const Navbar = () => {
                         {navItemsList.markdownRemark.frontmatter.navItems.map((v, i) => {
                             return (
                                 <li key={i} className={navbarStyles.navbarListItem}>
-                                    <Link to="/">{v}</Link>
+                                    <span className={navbarStyles.scroll}>{v.charAt(0).toUpperCase() + v.substring(1)}</span>
                                 </li>
                             )
                         })}

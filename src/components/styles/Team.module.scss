@@ -1,4 +1,5 @@
 .team {
+    margin-bottom: -4%;
     div {
         display: flex;
         flex-direction: row;
@@ -7,23 +8,44 @@
         p:nth-of-type(2n) {
             display: none;
         }
-        h3 {
-            width: 100%;
-        }
         p {
+            cursor: pointer;
             order: 1;
             width: 20%;
             min-width: 200px;
             margin: 0 2%;
-            margin-bottom: 2%;
+            margin-bottom: 4%;
+            box-shadow: 0 0 6px #ddd;
+            word-spacing: 200px;
+            line-height: 1.4;
+            padding-bottom: 5px;
+            &:hover {
+                box-shadow: 0 0 10px #ffd29c;
+            }
+            span {
+                margin-bottom: 5px;
+            }
         }
         .active {
+            box-shadow: initial;
             order: 0;
             display: initial !important;
             width: 100%;
+            word-spacing: initial;
+            margin-bottom: 0;
+            &:hover {
+                box-shadow: initial;
+                cursor: initial;
+            }
             span {
                 width: 50%;
-                margin-bottom: 20px;
+                margin: 10px 0;
+                border: 2px solid orange;
+                border-radius: 2%;
+                overflow: hidden;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
         .active:nth-child(1n) {
@@ -31,12 +53,17 @@
             font-family: 'Russo One', sans-serif;
             font-size: 1.7rem;
             line-height: 1.2;
+            span {
+                margin-bottom: 20px;
+            }
         }
         .active:nth-child(2n) {
             font-size: 1rem;
             line-height: 1.6;
             font-family: 'Montserrat', sans-serif;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
+            margin-bottom: 20px;
+            margin-top: 10px;
         }
     }
 }

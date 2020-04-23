@@ -2,6 +2,12 @@
     display: flex;
     background-color: #F8A748;
     padding: 15px 0 15px 0;
-    justify-content: center;
-    margin-top: 100px;
+    flex-direction: column;
+    p {
+        margin: 0 auto;
+    }
+    span {
+        margin-left: auto;
+        padding: 0 20px;
+    }
 }

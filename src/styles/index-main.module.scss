@@ -1,6 +1,11 @@
 //#F8A748 rgb(252, 212, 161)
 
 
+html {
+    scroll-behavior: smooth;
+    background-color: #ffffff
+}
+
 @mixin triangle {
     top: 60px;
     position: absolute;
@@ -10,24 +15,48 @@
     width: 100%;
 }
 
+@keyframes background {
+    0% {
+        background-position-x: 0;
+    }
 
-.wrapper::before {
-    @include triangle;
-    z-index: -2;
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
-    background:#F8A748;
+    50% {
+        background-position-x: 100%;
+    }
+
+    0% {
+        background-position-x: 0;
+    }
+}
+@media (min-width: 768px) {
+    .wrapper::after {
+        position: absolute;
+        left: 0;
+        top: 60px;
+        content: "";
+        z-index: -2;
+        height: 40vw;
+        width: 100%;
+        background: url("./bg.jpg");
+        animation: background 10s ease-in-out 0s infinite;
+    }
 }
 
-.wrapper::after {
-    @include triangle;
-    z-index: -1;
-    clip-path: polygon(50% 0, 0 100%, 100% 100%);
-    background: #fcd4a1;
-
-}
-
-@media (min-width: 1080px) {
-
+@media (min-width: 1024px) {
+    .wrapper::before {
+        @include triangle;
+        z-index: -2;
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+        background: url("./bg.jpg");
+        animation: background 10s ease-in-out 0s infinite;
+    }
+    .wrapper::after {
+        @include triangle;
+        z-index: -1;
+        clip-path: polygon(50% 0, 0 100%, 100% 100%);
+        background: #fcd4a1;
+    
+    }
     .wrapper::before, .wrapper::after {
         height: calc(100% - 60px);
     }

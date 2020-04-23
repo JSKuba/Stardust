@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import AboutUs from './AboutUs'
+import About from './About'
 import Team from './Team'
 import Blog from './Blog'
 import Support from './Support'
@@ -31,7 +31,7 @@ const Main = () => {
     //do zrobienia \|/ 
 
     const Components = {
-        aboutUs: AboutUs,
+        about: About,
         team: Team,
         blog: Blog,
         support: Support
@@ -41,7 +41,7 @@ const Main = () => {
         <main className={mainStyles.main}>
             <Logo />
             <div id="main" className={mainStyles.background}>
-                <div className={mainStyles.sheet}>
+                <div id="sheet" className={mainStyles.sheet}>
                     {articles.allMarkdownRemark.edges.sort((a, b) => {return a.node.frontmatter.index - b.node.frontmatter.index}).map(v => {
                         const Comp = Components[v.node.frontmatter.title]
                         return (

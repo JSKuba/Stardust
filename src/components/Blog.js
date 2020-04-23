@@ -45,13 +45,14 @@ const Blog = (props) => {
         containerList.map(v => {
           return v.classList.remove(blogStyles.disabled)
         })
+        document.getElementById('blog').removeChild(showAllBtn)
       })
 
 
       let asides = [...document.getElementById('blog').getElementsByClassName('span-wrapper')]
       window.addEventListener('scroll', () => {
         asides.map(v => {
-          if(window.pageYOffset > v.offsetTop + window.innerHeight/2 - (window.innerHeight - document.getElementById('main').offsetTop)) {
+          if(window.pageYOffset > v.offsetTop + window.innerHeight/2 - (window.innerHeight - document.getElementById('sheet').offsetTop)) {
             return !v.parentElement.parentElement.classList.contains(blogStyles.disabled) && v.classList.add(blogStyles.visible)
           }
           return v
