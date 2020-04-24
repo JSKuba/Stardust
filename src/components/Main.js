@@ -32,6 +32,9 @@ const Main = () => {
         const slug = window.location.href.split("/").pop().split(";")[0]
         if (slug !== "") {
             window.scrollTo(0, document.getElementById(slug).offsetTop + document.getElementById('sheet').offsetTop - 60)
+            if (document.getElementById(slug).getElementsByTagName('button')[0] !== undefined) {
+                document.getElementById(slug).getElementsByTagName('button')[0].click()
+            }
         }
     })
 
