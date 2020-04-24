@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import About from './About'
@@ -9,7 +9,7 @@ import Template from './Template'
 import Logo from './Logo'
 import mainStyles from './styles/Main.module.scss'
 
-const Main = (props) => {
+const Main = () => {
     const articles = useStaticQuery(graphql`
     query {
         allMarkdownRemark (
@@ -28,8 +28,12 @@ const Main = (props) => {
     }
     `)
 
-    //              |
-    //do zrobienia \|/ 
+    useEffect(() => {
+        const slug = window.location.href.split("/").pop().split(";")[0]
+        if (slug !== "") {
+            window.scrollTo(0, document.getElementById(slug).offsetTop + document.getElementById('sheet').offsetTop - 60)
+        }
+    })
 
     const Components = {
         about: About,
@@ -46,37 +50,23 @@ const Main = (props) => {
                 <div id="sheet" className={mainStyles.sheet}>
                     {articles.allMarkdownRemark.edges.sort((a, b) => {return a.node.frontmatter.index - b.node.frontmatter.index}).map(v => {
                         const Comp = Components[v.node.frontmatter.title]
-                        if(!props.blog) {
-                            if(Comp !== undefined) {
-                                return (
-                                    <Comp
-                                        key={v.node.frontmatter.index}
-                                        html={v.node.html} 
-                                        title={v.node.frontmatter.title}
-                                    />
-                                )
-                            } else {
-                                return (
-                                    <Template
-                                        key={v.node.frontmatter.index}
-                                        html={v.node.html} 
-                                        title={v.node.frontmatter.title}
-                                    />
-                                )
-                            }
-                        } else {
-                            if(v.node.frontmatter.title === "blog") {
-                                return (
-                                    <Comp
+                        if(Comp !== undefined) {
+                            return (
+                                <Comp
                                     key={v.node.frontmatter.index}
                                     html={v.node.html} 
                                     title={v.node.frontmatter.title}
-                                    />
-                                )
-                            } else {
-                                return null
-                            }
-                        }
+                                />
+                            )
+                        } else {
+                            return (
+                                <Template
+                                    key={v.node.frontmatter.index}
+                                    html={v.node.html} 
+                                    title={v.node.frontmatter.title}
+                                />
+                            )
+                        }                                 
                     })}
                 </div>
             </div>

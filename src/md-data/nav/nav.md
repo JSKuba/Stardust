@@ -1,4 +1,4 @@
 ---
 title: 'nav'
-navItems: ['about', 'team', 'blog', 'support', 'new']
+navItems: ['about', 'team', 'blog', 'support']
 ---
