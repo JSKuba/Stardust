@@ -35,7 +35,7 @@ const IndexPage = (props) => {
     return (
         <>
             <Helmet>
-                <html lang="en" prefix="og: http://ogp.me/ns#"/>
+                <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" />
                 <meta property="og:image" content={absolutePath === '' ? null : absolutePath}/>
             </Helmet>
             <div className={indexStyles.wrapper}>
