@@ -35,9 +35,13 @@ const IndexPage = (props) => {
     return (
         <>
             <Helmet>
+                <title>Stardust</title>
                 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml" />
                 <meta property="og:image" content={absolutePath === '' ? null : absolutePath}/>
-                <meta property="og:title" content="Testtttt" />
+                <meta property="og:title" content={`${props.pageContext.slug}`} />
+                <meta property="og:site_name" content="Stardust" />
+                <meta property="og:url" content={`https://jskuba.netlify.app/${props.pageContext.slug}`}/>
+                <meta property="og:type" content="website" />
             </Helmet>
             <div className={indexStyles.wrapper}>
                 <Layout>
