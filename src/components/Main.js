@@ -29,7 +29,8 @@ const Main = () => {
     `)
 
     useEffect(() => {
-        const slug = window.location.href.split("/").pop().split(";")[0]
+        const slug = window.location.href.split("/").pop().split(";")[0].split("?")[0]
+        console.log(slug)
         if (slug !== "") {
             window.scrollTo(0, document.getElementById(slug).offsetTop + document.getElementById('sheet').offsetTop - 60)
             if (document.getElementById(slug).getElementsByTagName('button')[0] !== undefined) {

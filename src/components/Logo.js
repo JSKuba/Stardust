@@ -24,6 +24,7 @@ const Logo = () => {
             const arrow = document.getElementsByClassName(logoStyles.arrow)
             const desc = document.getElementsByClassName(logoStyles.desc)
             desc[0].classList.add(logoStyles.show)
+            arrow[0].classList.add(logoStyles.show)
             window.addEventListener('scroll', () => {
                 if(window.pageYOffset > 0) {
                     !arrow[0].classList.contains(logoStyles.hidden) && arrow[0].classList.add(logoStyles.hide)
@@ -35,7 +36,7 @@ const Logo = () => {
 
     return (
         <figure>
-            <img className={logoStyles.mainLogo} src={logo} alt="logo" desc="Stardust logo" />
+            <img id="main-logo" className={logoStyles.mainLogo} src={logo} alt="logo" desc="Stardust logo" />
             <span className={logoStyles.desc} dangerouslySetInnerHTML={{__html: desc.allMarkdownRemark.edges[0].node.html}}/>
             <img id="arrow" className={logoStyles.arrow} src={svg} alt="arrow" desc="arrow" />
         </figure>

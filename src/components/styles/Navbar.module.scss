@@ -27,6 +27,9 @@
     height: 100%;
     transform: translateX(-30px);
     transition: ease-out .3s;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .navbar {

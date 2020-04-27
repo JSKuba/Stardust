@@ -43,6 +43,15 @@ const Navbar = () => {
         document.getElementById('arrow').addEventListener('click', () => {
             window.scrollTo(0, document.getElementById('about').offsetTop + document.getElementById('sheet').offsetTop - 60)
         })
+        document.getElementById('arrow').addEventListener('click', () => {
+            window.scrollTo(0, document.getElementById('about').offsetTop + document.getElementById('sheet').offsetTop - 60)
+        })
+        document.getElementById('main-logo').addEventListener('click', () => {
+            window.scrollTo(0, document.getElementById('about').offsetTop + document.getElementById('sheet').offsetTop - 60)
+        })
+        document.getElementById('nav-logo').addEventListener('click', () => {
+            window.location.reload()
+        })
     })
 
     return (
@@ -53,7 +62,7 @@ const Navbar = () => {
                         <span className={navbarStyles.navBtnLine} />
                     </span>
                 </button>
-                <img className={navActive ? `${navbarStyles.logoActive} ${navbarStyles.logo}` : navbarStyles.logo} src={logo} alt="logo" desc="Stardust logo" />
+                <img className={navActive ? `${navbarStyles.logoActive} ${navbarStyles.logo}` : navbarStyles.logo} id="nav-logo" src={logo} alt="logo" desc="Stardust logo" />
                 <nav className={navActive ? `${navbarStyles.navbarActive} ${navbarStyles.navbar}` : navbarStyles.navbar}>
                     <ul className={navbarStyles.navbarList}>
                         {navItemsList.markdownRemark.frontmatter.navItems.map((v, i) => {

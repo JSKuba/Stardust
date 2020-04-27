@@ -47,12 +47,16 @@ figure {
         margin-bottom: 0;
         .main-logo {
             width: 40vw;
+            &:hover {
+                cursor: pointer;
+            }
         }
         .arrow {
             display: initial;
             position: absolute;
             bottom: 0;
             width: 5vw;
+            opacity: 0;
             transition: opacity 2s ease-in-out, transform .5s ease-in-out;
             &:hover {
                 cursor: pointer;
@@ -73,6 +77,9 @@ figure {
         }
         .hide {
             opacity: 0;
+            &:hover {
+                cursor: initial;
+            }
         }
     }
 }
