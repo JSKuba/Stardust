@@ -34,7 +34,7 @@ This mister probably doesn't need to be introduced to anyone! The real Team Lead
 ![Marcin Jasiukowicz](./img/MJ.jpg)
 Marcin Jasiukowicz
 
-Calls himeself a "tinkerer obsessed with space", big fan of SpaceX and space technologies. Will spot a Tesla car from a mile away. Marcin is our Firmware Enginieer working on the technical side of the Stardust mission. He loves pizza and 0.99€ chicken nuggets from Burger King.
+Calls himeself a "tinkerer obsessed with space", big fan of SpaceX and space technologies. Will spot a Tesla car from a mile away. Marcin is our Firmware Enginieer working on the technical side of the Stardust mission. He loves pizza and 0.99€ chicken nuggets from Burger King. Catch him in interwebz over at [yasiu.pl](https://yasiu.pl/?ref=stardust)
 
 ![Mateusz Grzybowski](./img/MG.jpg)
 Mateusz Grzybowski

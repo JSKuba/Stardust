@@ -40,6 +40,9 @@ const Navbar = () => {
             })
             return v
         })
+        document.getElementById('arrow').addEventListener('click', () => {
+            window.scrollTo(0, document.getElementById('about').offsetTop + document.getElementById('sheet').offsetTop - 60)
+        })
     })
 
     return (
