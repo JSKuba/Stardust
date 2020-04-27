@@ -14,9 +14,6 @@ figure {
     .arrow {
         display: none;
     }
-    #desc {
-        display: none;
-    }
 }
 
 @media (min-width: 768px) {
@@ -30,6 +27,10 @@ figure {
         height: 40vw;
         .main-logo {
             width: 60vw;
+        }
+        .desc {
+            color: #ffa837;
+            font-family: 'Montserrat', sans-serif;
         }
     }
 }
