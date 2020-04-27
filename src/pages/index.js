@@ -10,7 +10,6 @@ const IndexPage = (props) => {
 
     let helmet
     if(props.pageContext.slug !== undefined) {
-        console.log('hi')
         helmet = <Helmet>
                     <title>Stardust</title>
                     <html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml" />
@@ -21,7 +20,6 @@ const IndexPage = (props) => {
                     <meta property="og:type" content="website" />
                 </Helmet>
     } else {
-        console.log('ih')
         helmet = <Helmet>
                     <title>Stardust</title>
                     <html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml" />
