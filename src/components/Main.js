@@ -8,6 +8,7 @@ import Support from './Support'
 import Template from './Template'
 import Logo from './Logo'
 import mainStyles from './styles/Main.module.scss'
+import Inside from './Inside'
 
 const Main = () => {
     const articles = useStaticQuery(graphql`
@@ -42,6 +43,7 @@ const Main = () => {
     const Components = {
         about: About,
         team: Team,
+        inside: Inside,
         blog: Blog,
         support: Support,
         template: Template
