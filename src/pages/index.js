@@ -13,20 +13,20 @@ const IndexPage = (props) => {
         helmet = <Helmet>
                     <title>Stardust</title>
                     <html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml" />
-                    <meta property="og:image" content={`https://raw.githubusercontent.com/JSKuba/gatsby-netlify/master/src/md-data/main/${props.pageContext.slug}/${props.pageContext.slug}.jpg`}/>
+                    <meta property="og:image" content={`https://raw.githubusercontent.com/simle-stardust/Website/master/src/md-data/main/${props.pageContext.slug}/${props.pageContext.slug}.jpg`}/>
                     <meta property="og:title" content={`Stardust - ${props.pageContext.slug}`} />
                     <meta property="og:site_name" content="Stardust" />
-                    <meta property="og:url" content={`https://jskuba.netlify.app/${props.pageContext.slug}/`}/>
+                    <meta property="og:url" content={`https://stardust-bexus.net/${props.pageContext.slug}/`}/>
                     <meta property="og:type" content="website" />
                 </Helmet>
     } else {
         helmet = <Helmet>
                     <title>Stardust</title>
                     <html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml" />
-                    <meta property="og:image" content="https://raw.githubusercontent.com/JSKuba/gatsby-netlify/master/src/components/img/logo.png" />
+                    <meta property="og:image" content="https://raw.githubusercontent.com/simle-stardust/Website/master/src/components/img/logo.png" />
                     <meta property="og:title" content="Stardust" />
                     <meta property="og:site_name" content="Stardust" />
-                    <meta property="og:url" content="https://jskuba.netlify.app/"/>
+                    <meta property="og:url" content="https://stardust-bexus.net/"/>
                     <meta property="og:type" content="website" />
                 </Helmet>
     }
