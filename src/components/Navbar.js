@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import logo from './img/stardust-logo.png'
 import navbarStyles from './styles/Navbar.module.scss'
+import teamStyles from './styles/Team.module.scss'
 
 const Navbar = () => {
     const [navActive, setNavActive] = useState(false)
@@ -34,9 +35,12 @@ const Navbar = () => {
                 }
             })
         })
-        navItems.map(v => {
+        navItems.map((v, i) => {
             v.addEventListener('click', () => {
                 window.scrollTo(0, document.getElementById(v.textContent.toLowerCase()).offsetTop + document.getElementById('sheet').offsetTop - 60)
+                if (document.getElementsByClassName(teamStyles.active)[0] !== undefined) {
+                    document.getElementsByClassName(teamStyles.active)[0].classList.remove(teamStyles.active)
+                }
             })
             return v
         })
