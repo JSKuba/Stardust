@@ -1,5 +1,5 @@
 ---
-index: 3
+index: 4
 class: 'article'
 title: 'blog'
 ---
