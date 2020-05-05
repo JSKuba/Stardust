@@ -1,6 +1,7 @@
 .aboutUs {
     h3 {
         margin-top: 2rem;
+        position: relative;
     }
     p {
         width: 100%;
@@ -54,3 +55,21 @@
     }
 }
 
+@media (min-width: 1300px) {
+    .aboutUs {
+        h3:nth-of-type(1) {
+            &::after {
+            position: absolute;
+            top: 0;
+            right: 2rem; 
+            width: 4rem;
+            height: 4rem;
+            transform: translateY(-25%);
+            content: '';
+            background: url('../img/logo.png');
+            background-size: cover;
+            z-index: 999;
+            }
+        }
+    }
+}

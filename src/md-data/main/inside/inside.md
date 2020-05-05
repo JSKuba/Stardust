@@ -7,7 +7,7 @@ title: 'inside'
 ## Inside 
 
 The objective of the experiment is to investigate the microbiome of the stratosphere qualitatively and quantitatively.
-The experiment consists of four parts: a filtering system, an electromechanical part operating the filtering system, an electronic system receiving and processing information from the sensors and controlling the electromechanical part and the external isolation made of extruded polystyrene. (2 zdjęcia: gondola przekrój i gondola)
+The experiment consists of four parts: a filtering system, an electromechanical part operating the filtering system, an electronic system receiving and processing information from the sensors and controlling the electromechanical part and the external isolation made of extruded polystyrene.
 
 ![Stardust logo](./img/1.jpg) ![Stardust](./img/2.jpg)
 
@@ -18,7 +18,7 @@ In this experiment, microorganisms shall be caught in four of six syringe filter
 The pump shall be working during the whole flight, however, the valves of the system shall open after reaching an altitude of 15 km during ascent and close after crossing 18 km of altitude during descent. After the landing of the balloon’s gondola, the filtering system shall be dismounted from the experiment, packed into a safe and clean container and transported immediately to a laminar flow cabinet, where its outer surface shall be decontaminated. Then, still in the laminar flow cabinet, the system shall be packed and sealed in a clean vacuum sack. The temperature of the system during these operations should not exceed the value of 10 ºC. The package with the system shall be transported to the laboratory in Gdańsk in as low temperature as possible. 
 During the flight of the balloon with the experiment, the second filtering system similar to that of the main experiment will be running, performing in the same manner, in regular atmospheric air close to Earth’s surface, as a secondary control to compare the results from the stratosphere and the troposphere. All the procedures shall be kept respectively.
 
-![Stardust logo](./img/5.png)
+![Stardust logo](./img/8.png)
 
 After bringing the systems with collected samples to the laboratory, the filters shall be rinsed with proper solutions to wash out the microorganisms from the filters’ membranes. One of the sampling filters and one of the control filters shall be rinsed with a cell lysis buffer after a short incubation with lysozyme and ribonuclease A and then with proteinase K in order to extract total DNA from the collected bacterial cells. Then the DNA shall be purified using a DNA purification kit. The purified DNA shall undergo a multiple-displacement amplification with a Phi29 polymerase which is an isothermal process in which the whole genetic material is multiplied with high fidelity of sequences. The population of the 16S rRNA-coding gene from the amplified metagenome shall be re-amplified in polymerase chain reaction (PCR) and then sequenced in an NGS process on MiSeq apparatus (Illumina) which can output up to 25 millions of gene reads, giving information about the percentage of a given sequence in the population.
 
