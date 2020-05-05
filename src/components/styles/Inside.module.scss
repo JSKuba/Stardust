@@ -8,6 +8,7 @@
         text-align: justify;
         span {
             flex-grow: 1;
+            max-width: 100% !important;
             img {
                 padding: 20px;
             }
@@ -17,8 +18,8 @@
             &::after {
                 content: 'rexus-bexus.net';
                 position: absolute;
-                bottom: 0;
-                left: 55%;
+                bottom: 20px;
+                right: 20px;
                 font-size: 16px;
                 padding: 0 5px;
                 background: orange;
