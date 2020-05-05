@@ -23,7 +23,7 @@ const IndexPage = (props) => {
         helmet = <Helmet>
                     <title>Stardust</title>
                     <html lang="en" xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml" />
-                    <meta property="og:image" content="https://raw.githubusercontent.com/simle-stardust/Website/master/src/components/img/logo.png" />
+                    <meta property="og:image" content="https://raw.githubusercontent.com/simle-stardust/Website/master/src/components/img/stardust-logo.png" />
                     <meta property="og:title" content="Stardust" />
                     <meta property="og:site_name" content="Stardust" />
                     <meta property="og:url" content="https://stardust-bexus.net/"/>
