@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import logo from './img/stardust-logo.png'
+import face from './img/face.png'
+import mail from './img/mail.png'
 import navbarStyles from './styles/Navbar.module.scss'
 import teamStyles from './styles/Team.module.scss'
 
@@ -36,12 +38,14 @@ const Navbar = () => {
             })
         })
         navItems.map((v, i) => {
-            v.addEventListener('click', () => {
-                window.scrollTo(0, document.getElementById(v.textContent.toLowerCase()).offsetTop + document.getElementById('sheet').offsetTop - 60)
-                if (document.getElementsByClassName(teamStyles.active)[0] !== undefined) {
-                    document.getElementsByClassName(teamStyles.active)[0].classList.remove(teamStyles.active)
-                }
-            })
+            if (i < 5) {
+                v.addEventListener('click', () => {
+                    window.scrollTo(0, document.getElementById(v.textContent.toLowerCase()).offsetTop + document.getElementById('sheet').offsetTop - 60)
+                    if (document.getElementsByClassName(teamStyles.active)[0] !== undefined) {
+                        document.getElementsByClassName(teamStyles.active)[0].classList.remove(teamStyles.active)
+                    }
+                })
+            }
             return v
         })
         document.getElementById('arrow').addEventListener('click', () => {
@@ -76,6 +80,10 @@ const Navbar = () => {
                                 </li>
                             )
                         })}
+                        <li className={navbarStyles.navbarListItem}>
+                            <a className={navbarStyles.navbarIcon} href="https://www.facebook.com/stardust.microbiology.project/" id="face"><img alt="facebook" src={face} /></a>
+                            <a className={navbarStyles.navbarIcon} href="mailto:kontakt@simle.pl"><img alt="mail" id="mail" src={mail} /></a>
+                        </li>
                     </ul>
                 </nav>
             </div>

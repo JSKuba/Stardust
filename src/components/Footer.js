@@ -6,7 +6,7 @@ import footerStyles from './styles/Footer.module.scss'
 const Footer = () => {
     useEffect(() => {
         const HifiSuperstarSuperHit = document.createElement('span')
-        HifiSuperstarSuperHit.innerText = 'Website made by Jakub Chmielewski'
+        HifiSuperstarSuperHit.innerHTML = 'Website made by <a href="https://jskuba.netlify.app">Jakub Chmielewski</a>'
         document.getElementsByClassName(footerStyles.footer)[0].appendChild(HifiSuperstarSuperHit)
     })
 

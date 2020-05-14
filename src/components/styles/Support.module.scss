@@ -3,11 +3,12 @@
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        span {
-            flex-basis: 26%;
+        justify-content: space-around;
+        a {
+            flex-basis: 28%;
             align-self: center;
         }
-        span:last-of-type {
+        a:last-of-type {
             flex-basis: 100%;
         }
     }

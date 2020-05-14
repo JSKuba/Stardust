@@ -12,7 +12,7 @@ STARDUST Microbiology Project is a joint venture of two Gdańsk University of Te
 
 ### What is REXUS/BEXUS programme?
 The REXUS/BEXUS programme allows students from universities and higher education colleges across Europe to carry out scientific and technological experiments on research rockets and balloons. Each year, two rockets and two balloons are launched, carrying up to 20 experiments designed and built by student teams. 
-The REXUS/BEXUS programme is realised organized by a bilateral Agency Agreement between the German Aerospace Center (DLR) and the Swedish National Space Agency (SNSA) in cooperation with European Space Agency (ESA).
+The REXUS/BEXUS programme is realised organized by a bilateral Agency Agreement between the German Aerospace Center (DLR) and the Swedish National Space Agency (SNSA) in cooperation with European Space Agency (ESA). Find more at [rexus-bexus](http://rexusbexus.net/).
 
 ![Stardust in Kiruna](./img/stardust-in-kiruna.jpg)![Stardust in Esrange Space Center](./img/stardust-in-esrange.jpg)
 
