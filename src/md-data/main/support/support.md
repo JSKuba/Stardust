@@ -6,10 +6,10 @@ title: 'support'
 
 ## Support 
 
-![Stardust logo](./img/1.png)
-![Stardust logo](./img/2.png)
-![Stardust logo](./img/3.png)
-![Stardust logo](./img/4.png)
-![Stardust logo](./img/5.png)
-![Stardust logo](./img/6.png)
-![Stardust logo](./img/7.png)
+[![ESA](./img/1.png)](https://www.esa.int/)
+[![Excento](./img/2.png)](http://excento.pl/)
+[![SSPG](./img/3.png)](https://samorzad.pg.edu.pl/)
+[![Gdansk University of Technology](./img/4.png)](https://pg.edu.pl/)
+[![Rymdstyrelsen](./img/5.png)](https://www.rymdstyrelsen.se/)
+[![Deutsches Zentrum fur Luft- und Raumfahrt](./img/6.png)](https://www.dlr.de/DE/Home/home_node.html)
+[![Fundusze Europejskie](./img/7.png)](https://www.funduszeeuropejskie.gov.pl/)

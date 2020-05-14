@@ -1,4 +1,8 @@
 .aboutUs {
+    a {
+        color: orange;
+        line-height: none;
+    }
     h3 {
         margin-top: 2rem;
         position: relative;
@@ -15,6 +19,7 @@
         }
     }
 
+
     p:nth-of-type(n+2) {
         display: flex;
         flex-direction: row;
@@ -28,6 +33,14 @@
     p:nth-of-type(1) {
         margin-bottom: 60px;
     }
+
+    p:nth-of-type(3) {
+        display: initial;
+        * {
+            display: inline;
+        }
+    }
+
     &::before {
         display: block;
         content: "";

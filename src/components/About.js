@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import aboutStyles from './styles/About.module.scss'
 
 const AboutUs = (props) => {
+    console.log(props.html)
     useEffect(() => {
         const aboutChildren = [...document.getElementById('about').children]
         aboutChildren.map((v, i) => {
