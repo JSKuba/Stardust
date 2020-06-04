@@ -6,6 +6,14 @@ title: 'blog'
 
 ## Blog 
 
+### Separately, but together
+
+May 2020
+
+Separately, but together, we presented our project at the the CDR (Critical Design Review)! During the 20-minute speech, we presented our solutions, created models, analyzes and plans for the near future. However, the most important part was an over-one-hour discussion with the experts of the REXUS/BEXUS (Rocket/Balloon Experiments for University Students), thanks to which we know what to rethink or improve. It was definitely an intensive and well spent time!
+
+![Stardust logo](./img/12.jpg)
+
 ### Working during quarantine
 
 Spring 2020
