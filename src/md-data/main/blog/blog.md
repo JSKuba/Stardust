@@ -6,6 +6,14 @@ title: 'blog'
 
 ## Blog 
 
+### We are after IPR!
+
+July 2020
+
+We are already after IPR. It was a really valuable experience! Over the past two days, we have presented our progress, planned further activities, and discussed procedures related to the October launch campaign. Armelle Frenea-Schmidt's comments from SSC - Swedish Space Corporation were priceless to us, thank you! As a gratitude, of course, we took our guest on a little trip around Gdańsk Old Town. Our mentor Nicol Caplin from ESA - European Space Agency, was also with us but spiritually and via Skype! Now the most intense month ahead of us! We will test our systems and finish the construction of the gondola. Keep your fingers crossed!
+
+![Stardust logo](./img/13.jpg)
+
 ### Separately, but together
 
 May 2020
