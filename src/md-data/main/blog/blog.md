@@ -6,6 +6,16 @@ title: 'blog'
 
 ## Blog 
 
+### Test mission!
+
+July 2020
+
+Phew! It was a very long Monday. :D Today we did our test mission! The gondola containing half of the research system rose to a height of 33 km and after a few hours of flight landed on a charming field in a village named Kawle. 😎
+It was an important test for us before building the final gondola, that will be flown in the October mission under REXUS/BEXUS (Rocket/Balloon Experiments for University Students).
+Now it's time to go to the laboratory! 👩‍🔬👨‍🔬 We will share the results of our mission with you soon! 💪💪
+
+![Stardust logo](./img/14.jpg)
+
 ### We are after IPR!
 
 July 2020
