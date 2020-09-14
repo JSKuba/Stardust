@@ -22,7 +22,7 @@ In the end of August, a very sad news came to us. 😭
 Due to the epidemiological situation, the REXUS/BEXUS launch campaign, which was supposed to take place in Kiruna in October, is postponed to 2021. The organizers made this decision taking into account the health and safety of all participants. That doesn't mean we're going to laze, no, no no! 😎
 We've been working very hard on our experiment throughout the summer, and we will continue to improve it to make sure everything works out perfectly during the mission!
 
-![Stardust logo](./img/15.jpg)
+![Stardust logo](./img/15.png)
 
 ### Test mission!
 
