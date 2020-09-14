@@ -6,6 +6,24 @@ title: 'blog'
 
 ## Blog 
 
+### Next step - another visit by an SSC expert.
+
+September 2020
+
+On September  8th, we hosted Armelle Frenea-Schmidt, REXUS/BEXUS program manager from SSC - Swedish Space Corporation, in Gdańsk again. Our experiment has been carefully examined from all angles, we have heard some priceless comments that we are going to to implement! 🧐 As a thank you, we presented to our guest the charms of Gdańsk's old town. 😃 We also presented our progress to ESA representatives in the form of an online conference, during which our mentor, astrobiologist - Nicol Caplin shared her advice with us. 👩‍🔬 Meanwhile, the Stardust project continues! We have to work more on the integration of the system, final tests and prepare of a solid plan for the coming months! 💪
+
+![Stardust logo](./img/16.jpg)
+
+### REXUS/BEXUS campaign postponded to 2021!
+
+August 2020
+
+In the end of August, a very sad news came to us. 😭 
+Due to the epidemiological situation, the REXUS/BEXUS launch campaign, which was supposed to take place in Kiruna in October, is postponed to 2021. The organizers made this decision taking into account the health and safety of all participants. That doesn't mean we're going to laze, no, no no! 😎
+We've been working very hard on our experiment throughout the summer, and we will continue to improve it to make sure everything works out perfectly during the mission!
+
+![Stardust logo](./img/15.jpg)
+
 ### Test mission!
 
 July 2020
