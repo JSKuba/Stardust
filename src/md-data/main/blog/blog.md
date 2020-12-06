@@ -6,6 +6,22 @@ title: 'blog'
 
 ## Blog 
 
+### Online progress review with space experts.
+
+November 2020
+
+How was your Black Friady? Ours not bad at all! 😎 On November 27th, three representatives of Stardust, Paulina, Marcin and Kacper took part in the Student Space Conference. 🛰 During the Student Space Projects panel, we talked about our achievements so far and plans for the future. The event was organized by Polish Space Agecny and Gdańsk University of Technology.
+
+![Stardust logo](./img/18.png)
+
+### Online progress review with space experts.
+
+November 2020
+
+We have been working on improving the design of our gondola and electronic solutions for quite some time now. 😃 We have also updated the list of tests that we must complete and along with the schedule 👩‍💻👨‍💻 This is what we talked about with REXUS/BEXUS (Rocket/Balloon Experiments for University Students) program experts yesterday, during our meeting. The changes were approved, we also heard some valuable tips. 😎 So we have nothing else to do but roll up our sleeves and get to work! 💪
+
+![Stardust logo](./img/17.png)
+
 ### Next step - another visit by an SSC expert.
 
 September 2020
