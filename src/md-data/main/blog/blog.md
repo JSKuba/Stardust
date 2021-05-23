@@ -6,7 +6,42 @@ title: 'blog'
 
 ## Blog 
 
-### Online progress review with space experts.
+### It's testing time!
+
+May 2021
+
+This month,  the Stardust's microbiology team took the next preparatory steps on the way to launching our experiment in Kiruna. 👩‍🔬👨‍🔬 Paulina and Bartek tested the strength of the sampling system against repeated autoclaving. Our microbiologists also prepared TSA media to carry out a functional test of the the final version of the sampling system in the near future. All this to ensure the highest possibility of obtaining numerous cell cultures of the microorganisms we will discover in space! 💪💪💪
+
+![Stardust logo](./img/22.jpg)
+
+### 3rd Progress Review
+
+April 2021
+
+Thursdays like this are what we like! At the end of last week we met with REXUS/BEXUS (Rocket/Balloon Experiments for University Students) specialists for the third Progress Review. What will we focus on in the near future? Testing, testing and more testing! So lets do it! 💪💪
+
+![Stardust logo](./img/21.jpg)
+
+### Meet our new REXUS/BEXUS mentor!
+
+March 2021
+
+It's been a while since we posted anything, but that doesn't mean we're idle! 
+Recently we had the pleasure to meet our new mentor in the REXUS/BEXUS! Here he is, Giorgio Parzianello, Mechanisms Engineer at ESA - European Space Agency. 🤩🤩
+Our last conversation was really valuable! We know what we need to work on and we are preparing for Progress Review, which is next week! 
+
+![Stardust logo](./img/20.png)
+
+### International consultation with our BEXUS friends from UK
+
+January 2021
+
+We always make time for international chats! 🤩
+On Sunday we connected online with BAMMsat On BEXUS team to talk about our projects and their location in the main gondola. 🧑‍🚀 We also discussed joint actions and issues of coordinating activities related to the launch. Thanks for this time, ladies gentlemen!.
+
+![Stardust logo](./img/19.jpg)
+
+### Stardust at Student Space Conference
 
 November 2020
 
