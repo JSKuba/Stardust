@@ -56,3 +56,18 @@ Paulina is a member of the microbiology team and like the other members of this 
 Szymon Magrian
 
 Szymon is our leading Embedded Firmware Engineer. Associated with Stardust for years, student at the Faculty of Electronics, Telecommunication and Informatics Department, one of the most experienced project members. Fascinated by the musical creativity of Mr. Jacek Stachursky. A fan of good memes and a great gourmet. His favorite dishes are donatello pizza from Biedronka and lumberjack sandwich from McDonald.
+
+![Natalia Czortek](./img/NC.jpg)
+Natalia Czortek
+
+Natalia joined our team in autumn 2020 and immediately became a very valuable member of the team! She is a student of Mechanics and Machine Design and she is our mechanical designer in Stardust. Her most important duties are the design and construction of Groundbox. Her interests include sports, nuclear energy, crime books and films. As she says herself, only coffee flows in her veins.
+
+![Jakub Pawłowski](./img/JP.jpg)
+Jakub Pawłowski
+
+Jakub is a representative of the Medical University of Gdańsk, a student of Environmental Health and a member of Stardust since autumn 2020. He works in the microbiology team where he helps to conduct research. His hobbies are sports and testing different types of beer. In her free time, she eats a lot of Pappardelle All'arrabbiata.
+
+![Bartosz Rybacki](./img/BR.jpg)
+Bartosz Rybacki
+
+Bartek is fresh blood in a team of microbiologists, who infects others with his positive energy in a few seconds. He is a biotechnology student and in our team he is responsible for microbiological research and creating test procedures. He is interested in epigenetics, armwrestling and analog photography. He cannot live without stuffed green olives.
